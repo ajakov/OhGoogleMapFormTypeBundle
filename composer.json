@@ -1,5 +1,5 @@
 {
-    "name": "oh/google-map-form-type-bundle",
+    "name": "ajakov/google-map-form-type-bundle",
     "type": "symfony-bundle",
     "description": "Set latitude, longitude and address values on a form using Google Maps",
     "keywords": ["google maps", "symfony", "form"],

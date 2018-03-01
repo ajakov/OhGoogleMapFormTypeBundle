@@ -15,6 +15,10 @@
             "email": "webber.nl@gmail.com"
         }
     ],
+    "require": {
+        "php": ">=7.1",
+        "symfony/symfony": "~3.3"
+    },
     "autoload": {
         "psr-0": {
             "Oh\\GoogleMapFormTypeBundle": ""

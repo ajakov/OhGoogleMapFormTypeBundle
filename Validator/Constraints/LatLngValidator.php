@@ -9,6 +9,11 @@ class LatLngValidator extends ConstraintValidator
 {
     public function validate($value, Constraint $constraint)
     {
+
+	    if($value['lat'] === null && $value['lng'] === null) {
+		    return true;
+	    }
+
 		if (!preg_match('/^[0-9\-\.]+$/', $value['lat'], $matches) || !preg_match('/^[0-9\-\.]+$/', $value['lng'], $matches)) {
 			 $this->context->addViolation($constraint->message, array('%lat%' => (float)$value['lat'], '%lng%' => (float)$value['lng']));
 			 return false;
